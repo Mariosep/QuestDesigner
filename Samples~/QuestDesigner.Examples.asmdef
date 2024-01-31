@@ -1,0 +1,19 @@
+{
+    "name": "Mariosep.QuestDesigner.Examples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:152b5d24e07ce2349b71ddb590eab617",
+        "GUID:9616fa1baddc0894a86b9715afaa4a0b",
+        "GUID:08c9b75da515d374ca8561a2ed7bda77"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

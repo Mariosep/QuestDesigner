@@ -1,0 +1,23 @@
+{
+    "name": "Mariosep.QuestDesigner.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:08c9b75da515d374ca8561a2ed7bda77",
+        "GUID:152b5d24e07ce2349b71ddb590eab617",
+        "GUID:8960dc1e0f2ab614496aaced6664c73a",
+        "GUID:73b79d78ffe533340bcf7bdc8a9c6c84",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:9616fa1baddc0894a86b9715afaa4a0b"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

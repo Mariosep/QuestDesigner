@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Editor/USS/ListViewStyles.uss?fileID=7433441132597879392&amp;guid=5da86a4008fd95e4583a788f92d6b429&amp;type=3#ListViewStyles" />
+    <ui:VisualElement name="quest__container" class="facts__container">
+        <CustomHelpBox message-type="Info" text="You have to be in playmode to debug a quest." name="editor-mode__help-box" focusable="false" style="margin-top: 15px; margin-left: 10px; margin-right: 10px;" />
+    </ui:VisualElement>
+</ui:UXML>

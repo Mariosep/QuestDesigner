@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Editor/USS/ListViewStyles.uss?fileID=7433441132597879392&amp;guid=5da86a4008fd95e4583a788f92d6b429&amp;type=3#ListViewStyles" />
+    <ui:VisualElement name="quest__container" class="facts__container" />
+    <ui:VisualElement name="quests__buttons" class="listview__buttons">
+        <ui:Button text="-" display-tooltip-when-elided="true" name="remove-quest__button" class="listview__button" />
+        <ui:Button text="+" display-tooltip-when-elided="true" name="add-quest__button" class="listview__button" />
+    </ui:VisualElement>
+</ui:UXML>

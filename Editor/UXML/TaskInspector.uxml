@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Blackboard/Scripts/Editor/BlackboardWindow/USS/GeneralStyles.uss?fileID=7433441132597879392&amp;guid=1e0b12837aed11a4d92fe9420aedfcd0&amp;type=3#GeneralStyles" />
+    <ui:VisualElement name="content-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="task-inspector__header" class="section-header" style="flex-grow: 0;">
+            <ui:Label tabindex="-1" text="Inspector" display-tooltip-when-elided="true" name="task-inspector__title" class="tittle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="task-inspector__content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Task" parse-escape-sequences="true" display-tooltip-when-elided="true" name="element-selected-name" style="margin-top: 0; margin-right: 9px; margin-bottom: 5px; margin-left: 14px; -unity-font-style: bold;" />
+            <ui:VisualElement name="task-id__property" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); display: none;">
+                <ui:TextField picking-mode="Ignore" label="ID" name="task-id__text-field" binding-path="id" />
+            </ui:VisualElement>
+            <ui:VisualElement name="task-name__property" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:TextField picking-mode="Ignore" label="Name" name="task-name__text-field" />
+            </ui:VisualElement>
+            <ui:VisualElement name="task-description__property" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:TextField picking-mode="Ignore" label="Description" name="task-description__text-field" multiline="true" binding-path="description" />
+            </ui:VisualElement>
+            <ui:VisualElement name="task-is-hidden__property" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Toggle label="Is Hidden" name="task-is-hidden__toggle" binding-path="isHidden" />
+            </ui:VisualElement>
+            <ui:VisualElement name="task-requirements__property" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:ListView focusable="true" name="task-requirements__list-view" header-title="Requirements" show-border="true" show-foldout-header="true" style="display: none;" />
+                <Blackboard.Editor.Requirement.RequirementsListView />
+            </ui:VisualElement>
+            <ui:VisualElement name="task-next-task__property" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); display: none;">
+                <ui:ListView focusable="true" name="task-next-tasks__list-view" header-title="Next Tasks" show-border="true" show-foldout-header="true" />
+            </ui:VisualElement>
+            <ui:Foldout text="Events" name="events__foldout" value="false">
+                <Blackboard.Editor.Commands.CommandListView header-title="On Start" collapsed-by-default="false" name="on-start-task" class="propperty" />
+                <Blackboard.Editor.Commands.CommandListView header-title="On Complete" collapsed-by-default="false" name="on-complete-task" class="propperty" />
+            </ui:Foldout>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

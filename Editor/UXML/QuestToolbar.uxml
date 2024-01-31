@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <uie:Toolbar>
+        <uie:ToolbarMenu tabindex="-1" display-tooltip-when-elided="true" text="Assets" name="toolbar-menu__assets" />
+    </uie:Toolbar>
+</ui:UXML>

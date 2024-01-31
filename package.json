@@ -1,0 +1,14 @@
+{
+  "name": "com.mariosep.questdesigner",
+  "version": "1.0.1",
+  "displayName": "Quest Designer",
+  "description": "Tool for create and design quests.",
+  "author": {
+    "name": "Mario Sepulveda Cornejo",
+    "email": "mariosep28@gmail.com",
+    "url": "https://gitlab.com/mariosep28"
+  },
+  "dependencies": {
+    "com.mariosep.blackboard": "https://github.com/Mariosep/blackboard.git"
+ }
+}

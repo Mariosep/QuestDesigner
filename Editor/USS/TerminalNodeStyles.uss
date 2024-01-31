@@ -1,0 +1,4 @@
+#terminal-label {
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}

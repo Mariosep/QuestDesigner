@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Blackboard/Scripts/Editor/BlackboardWindow/USS/GeneralStyles.uss?fileID=7433441132597879392&amp;guid=1e0b12837aed11a4d92fe9420aedfcd0&amp;type=3#GeneralStyles" />
+    <ui:VisualElement name="content-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="quest-inspector__header" class="section-header" style="flex-grow: 0;">
+            <ui:Label tabindex="-1" text="Inspector" display-tooltip-when-elided="true" name="quest-inspector__title" class="tittle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="quest-inspector__content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Quest" parse-escape-sequences="true" display-tooltip-when-elided="true" name="element-selected-name" style="margin-top: 0; margin-right: 9px; margin-bottom: 5px; margin-left: 14px; -unity-font-style: bold;" />
+            <ui:VisualElement name="quest-id__propperty" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); display: none;">
+                <ui:TextField picking-mode="Ignore" label="ID" name="quest-id__text-field" binding-path="id" />
+            </ui:VisualElement>
+            <ui:VisualElement name="quest-name__propperty" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:TextField picking-mode="Ignore" label="Name" name="quest-name__text-field" is-delayed="true" data-source-type="QuestDesigner.QuestSO, Mariosep.QuestDesigner" binding-path="questName" />
+            </ui:VisualElement>
+            <ui:VisualElement name="quest-description__propperty" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:TextField picking-mode="Ignore" label="Description" name="quest-description__text-field" multiline="true" binding-path="description" />
+            </ui:VisualElement>
+            <ui:VisualElement name="quest-enable-on-start__propperty" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Toggle label="Enable On Start" name="quest-enable-on-start__toggle" binding-path="enableOnStart" />
+            </ui:VisualElement>
+            <ui:VisualElement name="quest-failable__propperty" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Toggle label="Failable" name="quest-failable__toggle" binding-path="failable" />
+            </ui:VisualElement>
+            <ui:VisualElement name="quest-next-quest__propperty" class="propperty" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <QuestDesigner.Editor.QuestDropdown />
+            </ui:VisualElement>
+            <ui:Foldout text="Events" name="events__foldout" value="false">
+                <Blackboard.Editor.Commands.CommandListView header-title="On Start" collapsed-by-default="false" name="on-start-quest" class="propperty" />
+                <Blackboard.Editor.Commands.CommandListView header-title="On Complete" collapsed-by-default="false" name="on-complete-quest" class="propperty" />
+            </ui:Foldout>
+            <ui:VisualElement name="open-quest-graph" style="flex-grow: 1; align-items: center;">
+                <ui:Button text="Open Quest Graph" parse-escape-sequences="true" display-tooltip-when-elided="true" name="open-quest-graph__button" style="padding-bottom: 8px; padding-top: 8px; padding-right: 11px; padding-left: 11px; margin-top: 22px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

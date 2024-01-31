@@ -1,0 +1,21 @@
+{
+    "name": "Mariosep.QuestDesigner",
+    "rootNamespace": "",
+    "references": [
+        "GUID:23eed6c2401dca1419d1ebd180e58c5a",
+        "GUID:152b5d24e07ce2349b71ddb590eab617",
+        "GUID:73b79d78ffe533340bcf7bdc8a9c6c84",
+        "GUID:9616fa1baddc0894a86b9715afaa4a0b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "DOTween.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

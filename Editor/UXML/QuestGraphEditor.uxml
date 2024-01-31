@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/Editor/USS/QuestEditor.uss?fileID=7433441132597879392&amp;guid=073a00cdfc04f444c8794bd836776828&amp;type=3#QuestEditor" />
+    <QuestDesigner.Editor.QuestToolbarView />
+    <Blackboard.Editor.SplitView fixed-pane-initial-dimension="400">
+        <ui:VisualElement name="left-panel" style="background-color: rgba(0, 0, 0, 0); flex-grow: 1; min-width: 300px;">
+            <QuestDesigner.Editor.GraphInspectorView />
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel" style="flex-basis: auto;">
+            <QuestDesigner.Editor.QuestGraphView focusable="true" name="QuestGraphView" style="flex-grow: 1; flex-shrink: 1;">
+                <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 255, 255); position: absolute; height: 10px; width: 100%; align-items: center; align-self: center; top: 50%; display: none;" />
+            </QuestDesigner.Editor.QuestGraphView>
+        </ui:VisualElement>
+    </Blackboard.Editor.SplitView>
+</ui:UXML>

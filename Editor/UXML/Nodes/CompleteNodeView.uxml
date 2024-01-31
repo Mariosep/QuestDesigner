@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/Editor/USS/NodeStyles.uss?fileID=7433441132597879392&amp;guid=d284df3c5a2ccf847bdf08f470c8ae65&amp;type=3#NodeStyles" />
+    <Style src="project://database/Assets/Scripts/Editor/USS/TerminalNodeStyles.uss?fileID=7433441132597879392&amp;guid=23a5558ff3fc6e342a0df18c8f03b309&amp;type=3#TerminalNodeStyles" />
+    <ui:VisualElement name="node-state" style="flex-grow: 1;" />
+    <ui:VisualElement name="node-border" style="background-color: rgba(56, 56, 56, 0);">
+        <ui:VisualElement name="title" style="display: none;">
+            <ui:Label name="title-label" text="Start" class="unity-text-element unity-label" />
+            <ui:VisualElement name="title-button-container">
+                <ui:VisualElement name="collapse-button">
+                    <ui:VisualElement name="icon" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="contents">
+            <ui:VisualElement name="divider" class="horizontal" style="display: none;" />
+            <ui:VisualElement name="top">
+                <ui:VisualElement name="input" style="display: flex; padding-top: 5px; padding-bottom: 5px; background-color: rgb(145, 87, 0); padding-right: 10px;" />
+                <ui:VisualElement name="divider" class="vertical" style="display: none;" />
+                <ui:VisualElement name="output" style="display: none;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="collapsible-area">
+                <ui:VisualElement name="divider" class="horizontal" />
+                <ui:VisualElement name="extension" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="selection-border" picking-mode="Ignore" />
+</ui:UXML>

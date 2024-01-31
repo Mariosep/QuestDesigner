@@ -1,0 +1,19 @@
+.objective-label {
+    flex-grow: 1;
+}
+
+#objective-item {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.unity-toggle {
+    width: 16px;
+    height: 16px;
+    align-self: center;
+}
+
+.unity-toggle__checkmark {
+    width: 16px;
+    height: 16px;
+}

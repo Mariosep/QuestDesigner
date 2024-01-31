@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:MultiColumnListView binding-path="facts" selection-type="Multiple" virtualization-method="DynamicHeight" show-bound-collection-size="true" sorting-enabled="false" show-alternating-row-backgrounds="ContentOnly" show-border="false" reorder-mode="Animated" reorderable="true">
+        <ui:Columns>
+            <ui:Column name="name" title="Name" width="200" />
+            <ui:Column name="description" title="Description" stretchable="true" />
+            <ui:Column name="nextQuest" title="Next Quest" width="200" />
+        </ui:Columns>
+    </ui:MultiColumnListView>
+</ui:UXML>

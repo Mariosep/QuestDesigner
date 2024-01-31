@@ -1,0 +1,4 @@
+VisualElement {
+    -unity-font-definition: url('project://database/Assets/Fonts/roboto/Roboto-Regular%20SDF.asset?fileID=11400000&guid=449df5e6cb5e0ef4ea885958fcd832a9&type=2#Roboto-Regular SDF');
+    -unity-font: url('project://database/Assets/Fonts/roboto/Roboto-Regular.ttf?fileID=12800000&guid=5a61f610aa34af74ea1202f96f6d4537&type=3#Roboto-Regular');
+}
